@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  font-family: Inter;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(25, 0, 67);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-white: rgba(255, 255, 255, 0.87);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 7px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(160, 58, 255);
+  color: var(--color-white);
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(191, 128, 250);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.362);
+}
+
+.container {
+  width: 100%;
+  min-height: auto;
+}
+
+.container h1 {
+  margin-left: 20px;
+}
+
+.question-section {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-wrapper {
+  width: 520px;
+  background-color: rgb(47, 1, 228);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+}
+
+.question-wrapper h3 {
+  margin: 10px 0px 10px 7px;
+}
+
+.question-wrapper ul {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.question {
+  width: 500px;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.question:hover {
+  background-color: #00ff004f;
+}
+
+.question.active {
+  background-color: #00ff0098;
+}
+
+.input-answer {
+  appearance: none;
+}
+
+.label-answer {
+  cursor: pointer;
+  padding: 0 300px 0 0px;
+}
+
+.result {
+  list-style-type: none;
+  margin-left: -37px;
+  margin-right: 20px;
+}
+
+.result-correct {
+  color: rgb(4, 190, 4);
+}
+
+.result-wrong {
+  color: red;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-submit {
+  background-color: rgb(11, 130, 234);
+}
+
+.btn-submit:hover {
+  background-color: rgb(6, 164, 255);
+}
+
+.score-section {
+  width: auto;
+  margin-left: 20px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+}
+
+.pagination-button {
+  width: 55px;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .question {
+    width: 100%;
+  }
+
+  .container h1 {
+    margin-left: 10px;
+  }
+
+  .label-answer {
+    padding: 0 150px 0 0;
+  }
+}
