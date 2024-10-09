@@ -58,7 +58,7 @@ export default function Quiz() {
     // alert nilai total
     Swal.fire({
       icon: "success",
-      title: `Done, your score is ${totalScore * 10}`,
+      title: `Done, your score is ${totalScore * 20}`,
     });
   };
 
